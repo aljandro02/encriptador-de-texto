@@ -1,0 +1,235 @@
+
+body{
+    margin: 0;
+    padding: 5rem 0 5rem 0;
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+.Cuerpo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+header{
+    width: 60%;
+    margin-bottom: 80px;
+}
+.Contendor-entrada{
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: space-between;
+    height: 78dvh;
+    width: 600px;
+    margin-left: 120px;
+}
+textarea{
+    width: 100%;
+    max-width: 700px;
+    height: 64dvh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size:30px;
+    color: white;
+    border:none;
+    border-radius: 10px;
+    background-color: rgb(108, 108, 241);
+    opacity: 0.5;
+    overflow: auto;
+    resize: none;
+    box-sizing: border-box;
+}
+#TextoUsuario::placeholder{
+    color: white;
+    border-color: black;
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    opacity: 1;
+}
+.condiciones{
+font-size: 18px;
+color: darkgray;
+margin-bottom: 1.5rem;
+display: flex;
+align-items: center;
+font-family: 'Courier New', Courier, monospace;
+font-weight: 600;
+gap: 6px;
+}
+.MensAlerta{
+    align-items: start;
+}
+.botones{
+   font-weight: 400;
+   border: 24px;
+   gap: 24px;
+  margin: 10px;
+  text-decoration: none;
+  gap: 2rem; 
+   height: 67px;
+   padding: 24px;
+   font-size: 30px;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  padding: 1.34375rem 0;
+  align-items: center;
+}
+.boton-encriptar{
+background-color: blue;
+color: black;
+font-family: 'Courier New', Courier, monospace;
+width: 50%;
+border: 5px outset;
+text-align: center;
+padding: 16px 0;
+border-radius: 10px;
+font-size: 20px;
+font-weight: 100px;
+text-decoration: none;
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 20px;
+}
+.boton-desencriptar{
+background-color: silver;
+color: black;
+font-family: 'Courier New', Courier, monospace;
+width: 50%;
+border: 5px outset;
+text-align: center;
+padding: 16px 0;
+border-radius: 10px;
+font-size: 20px;
+font-weight: 100px;
+text-decoration: none;
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 20px;
+}
+.boton-encriptar:hover{
+background-color: cornflowerblue;
+}
+.boton-desencriptar:hover{
+    background-color:slategray;
+}
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 20px;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 35rem;
+    margin: 10px;
+    height: 600px;
+    gap: 10rem;
+}
+.Contenedor-salida{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    height: 100%;
+}
+.area-Salida{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    height: 100%;
+    display: flex;
+}
+.texto-salida{
+    font-size: 24px;
+    color: gray;
+    display: none;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    line-height: 150%;
+    overflow-y: hidden;
+    height: 100%;
+}
+.Mensaje-salida, .instrucciones-salida{
+    display: block;
+    text-align: center;
+    width: 90%;
+    justify-content: center;
+}
+.Mensaje-salida{
+    font-weight: bold;
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    align-items: center;
+}
+.instrucciones-salida{
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    align-items: center;
+    font-size: 16px;
+}
+.boton-copiar{
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 67px;
+    border: 1px solid darkblue;
+    background-color: white;
+    color: blue;
+}
+.imagen-salida{
+    width: 320px;
+    height: auto;
+    border-radius: 10px;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    text-align:center;
+    font-size: 15px;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+}
+@media (max-width: 1200px){ /* estilo responsive */ 
+   .Cuerpo{
+    flex-direction: column;
+    padding:  5%;
+   } 
+   .contenedor2, .Contendor-entrada, .Contenedor-salida{
+    width: auto;
+   }
+}

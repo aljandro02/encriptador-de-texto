@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encriptador de Texto </title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main class="Cuerpo"> 
+        <div class="Contendor-entrada"> <!-- contenedor izquierdo-->
+            <div class="TextoIngresado">
+                <textarea id="TextoUsuario" class="Entrada-texto" placeholder="Ingresa el Texto aqui"></textarea>
+                <p class="condiciones">
+                <img class="MensAlerta" src="./imagen/bi_exclamation-circle-fill-1.png" alt="alerta">
+                Solo letras minusculas y sin acentos
+            </p>
+            </div>
+            <div class="botones">
+                <button onclick="Encriptar()" class="boton-encriptar">Encriptar</button>
+                <button onclick="Desencriptar()" class="boton-desencriptar">Desencriptar</button>
+             </div>
+        </div>
+        <div class="contenedor2">
+        <div class="Contenedor-salida"> <!-- contenedor derecho-->
+        <div class="area-Salida" id="AreaSalida"></div>  
+        <div class="imagen-salida">
+            <img id="Img-salida" src="./imagen/Muñeco.png" alt="muñeco">
+        </div> 
+        <p class="Mensaje-salida" id="MensajeSalida" style="margin-bottom: 0px; margin-top: 32px;">No hay Mensaje</p> 
+        <p class="instrucciones-salida" id="Instrucciones-Salida" style="margin-bottom: 0px;margin-top: 16px;"></p>  
+        <p class="texto-salida"></p>   
+        <button onclick="copiar()" class ="boton-copiar">Copiar</button>    
+ </div>
+ </div>
+</div>
+
+    </main>
+    <footer class="pie-pagina">
+        <p>Desarrollado por Alejandro Amaya</p>
+        <img class="Imagen-Encabezado" src="./imagen/Frame 6.png" alt="imagen de aluta latam">
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
